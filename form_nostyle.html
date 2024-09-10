@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 style>Checkout form</h1>
+      <p>
+        Below is an example form built entirely with Bootstrap’s form controls.
+        Each required form group has a validation state that can be triggered by
+        attempting to submit the form without completing it.
+      </p>
+    </div>
+
+    <div id="container">
+      <div id="billing">
+        <form>
+          <h4>Billing address</h4>
+          <br />
+
+          <div class="form-container">
+            <div class="form-group">
+              <label for="Fname">First name</label>
+              <input type="text" name="Fname" />
+            </div>
+            <div class="form-group">
+              <label for="Lname">Last name</label>
+              <input type="text" name="Lname " />
+            </div>
+          </div>
+
+          <br />
+          <label for="Username">Username</label>
+          <div>
+            <span>@</span>
+            <input type="text" name="username" placeholder="Username" />
+          </div>
+          <br /><br />
+          Email <span>(Optional)</span> <br />
+          <input type="text" name="email" placeholder="you@example.com" />
+          <br /><br />
+          Address <span>(Optional)</span><br />
+          <input type="text" name="address" placeholder="1234 Main St" />
+          <br /><br />
+          Address 2 <span>(Optional)</span><br />
+          <input
+            type="text"
+            name="address"
+            placeholder="Apartment or Suite"
+          /><br /><br />
+
+          <div class="form-container">
+            <div class="country-group">
+              <label for="Country">Country</label>
+              <select name="Country">
+                <option value="1">Choose...</option>
+                <option value="2">United States</option>
+              </select>
+            </div>
+            <div class="country-group">
+              <label for="State">State</label>
+              <select name="State">
+                <option value="1">Choose...</option>
+                <option value="2 ">California</option>
+                <optgroup label="Korea">
+                  <option value="3">Pohang</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="country-group">
+              <label for="Zip">Zip</label>
+              <input type="text" name="Zip" />
+            </div>
+          </div>
+          <br />
+
+          <hr />
+          <input
+            type="checkbox"
+            id="payment"
+            name="payment1"
+            value="1"
+          />Shipping address is the same as my billing address<br />
+          <input type="checkbox" id="payment" name="payment2" value="2" />Save
+          this information for next time
+          <hr />
+
+          <h3>Payment</h3>
+          <input type="radio" id="payment" name="payment" value="1" />Credit
+          card<br />
+          <input type="radio" id="payment" name="payment" value="2" />Debit
+          card<br />
+          <input type="radio" id="payment" name="payment" value="3" />PayPal
+          card<br /><br />
+
+          <div class="form-container">
+            <div class="form-group">
+              <label for="Cname">Name on card</label>
+              <input type="text" name="Cname" />
+            </div>
+
+            <div class="form-group">
+              <label for="Cnum">Credit and number</label>
+              <input type="text" name="Cnum" />
+            </div>
+          </div>
+
+          <p>Full name as displayed on card</p>
+          <br />
+
+          <div class="form-container">
+            <div class="card-group">
+              <label for="Expiration">Expiration</label>
+              <input type="text" name="Expiration" />
+            </div>
+            <div class="card-group">
+              <label for="CVV">CVV</label>
+              <input type="text" name="CVV" />
+            </div>
+          </div>
+          <hr />
+
+          <input type="color" name="color" value="#E70FEB" /> <br /><br />
+          <br /><br />
+
+          <fieldset>
+            <legend>Choose your birthday</legend>
+            <input
+              type="date"
+              min="2000-01-01"
+              max="2024-12-31"
+              name="formdate"
+            />
+          </fieldset>
+          <br /><br />
+
+          제목:
+          <input type="text" name="subject name" /><br />
+          내용: <br />
+          <textarea name="content" col="40" rows="5"></textarea>
+          <br />
+
+          <hr />
+
+          <input
+            type="submit"
+            name="save"
+            id="save"
+            value="Continue to checkout"
+          />
+        </form>
+      </div>
+
+      <div id="your-cart">
+        <div>
+          <span>Your cart</span>
+          <span>3</span>
+        </div>
+
+        <ul>
+          <div>
+            <div>
+              <h4>Product name</h4>
+              <p>$12</p>
+            </div>
+            <div>Brief description</div>
+          </div>
+          <div>
+            <div>
+              <h4>Second product</h4>
+              <p>$8</p>
+            </div>
+            <div>Brief description</div>
+          </div>
+          <div>
+            <div>
+              <h4>Thrid product</h4>
+              <p>$5</p>
+            </div>
+            <div>Brief description</div>
+          </div>
+          <div>
+            <div>
+              <h4>Promo code</h4>
+              <p>-$5</p>
+            </div>
+            <div>EXAMPLECODE</div>
+          </div>
+          <div>
+            <div>
+              <p>Total (USD)</p>
+              <h4>$20</h4>
+            </div>
+          </div>
+        </ul>
+        <div>
+          <div>
+            <input />
+            <button>Redeem</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
